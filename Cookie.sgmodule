@@ -33,7 +33,7 @@ http-request https:\/\/ios\.baertt\.com\/v5\/article\/complete script-path=https
 http-request https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag=中青看点极速版
 http-request https:\/\/ios\.baertt\.com\/v5\/article\/red_packet script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag=中青看点极速版
 http-request https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag=中青看点极速版
-http-request https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, tag=腾讯新闻
+腾讯新闻 = type=http-request,pattern=https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, requires-body=true
 
 [MITM]
 hostname = %APPEND% api.inews.qq.com, ifac*.iqiyi.com, *.bilibili.com, as.xiaojukeji.com, h5.ele.me, api.m.jd.com, ms.jr.jd.com, jdread-api.jd.com, www.52pojie.cn, *.smzdm.com, *.video.qq.com, mobwsa.ximalaya.com, act.10010.com, m.client.10010.com, i.meituan.com, activity-1.m.duiba.com.cn, api.1sapp.com, api.weibo.cn, pay.sc.weibo.com, *.ctrp.com, draw.jdfcloud.com, nebula.kuaishou.com, *.youth.cn, ios.baertt.com
