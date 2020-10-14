@@ -13,7 +13,6 @@ http-request ^https:\/\/jdread-api\.jd\.com\/* script-path=https://raw.githubuse
 http-request https:\/\/www\.52pojie\.cn\/home\.php\? script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=吾爱破解
 http-request ^https:\/\/www\.smzdm\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js, tag=什么值得买
 http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js, tag=腾讯视频
-http-request ^https?:\/\/.*\/mobile\-user\/homePage\/.* script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js,tag=喜马拉雅
 http-request ^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, tag=中国联通
 http-request ^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, tag=中国联通
 http-request ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, tag=中国联通
@@ -24,10 +23,6 @@ http-request ^https:\/\/api\.1sapp\.com\/content\/readV2? script-path=https://ra
 http-request ^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js, tag=趣头条
 http-request https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, tag=微博
 http-request https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, tag=微博
-http-request https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip_cookie.js, tag=携程旅行
-http-request ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/16575\/signin script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_cookie.js, tag=微信小程序-携程
-宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/user\/addUser\?code=\w+&, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
-宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
 
 [MITM]
-hostname = %APPEND% ifac*.iqiyi.com, *.bilibili.com, as.xiaojukeji.com, h5.ele.me, api.m.jd.com, ms.jr.jd.com, jdread-api.jd.com, www.52pojie.cn, *.smzdm.com, *.video.qq.com, mobwsa.ximalaya.com, act.10010.com, m.client.10010.com, i.meituan.com, activity-1.m.duiba.com.cn, api.1sapp.com, api.weibo.cn, pay.sc.weibo.com, *.ctrp.com, draw.jdfcloud.com
+hostname = %APPEND% ifac*.iqiyi.com, *.bilibili.com, as.xiaojukeji.com, h5.ele.me, api.m.jd.com, ms.jr.jd.com, jdread-api.jd.com, www.52pojie.cn, *.smzdm.com, *.video.qq.com, act.10010.com, m.client.10010.com, i.meituan.com, activity-1.m.duiba.com.cn, api.1sapp.com, api.weibo.cn, pay.sc.weibo.com
