@@ -28,6 +28,7 @@ http-request https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo s
 http-request ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/16575\/signin script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_cookie.js, tag=微信小程序-携程
 宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/user\/addUser\?code=\w+&, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
 宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
+快手极速版 = type=http-request,pattern=https:\/\/nebula\.kuaishou\.com\/nebula\/task\/earning\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
 
 [MITM]
-hostname = %APPEND% ifac*.iqiyi.com, *.bilibili.com, as.xiaojukeji.com, h5.ele.me, api.m.jd.com, ms.jr.jd.com, jdread-api.jd.com, www.52pojie.cn, *.smzdm.com, *.video.qq.com, mobwsa.ximalaya.com, act.10010.com, m.client.10010.com, i.meituan.com, activity-1.m.duiba.com.cn, api.1sapp.com, api.weibo.cn, pay.sc.weibo.com, *.ctrp.com, draw.jdfcloud.com
+hostname = %APPEND% ifac*.iqiyi.com, *.bilibili.com, as.xiaojukeji.com, h5.ele.me, api.m.jd.com, ms.jr.jd.com, jdread-api.jd.com, www.52pojie.cn, *.smzdm.com, *.video.qq.com, mobwsa.ximalaya.com, act.10010.com, m.client.10010.com, i.meituan.com, activity-1.m.duiba.com.cn, api.1sapp.com, api.weibo.cn, pay.sc.weibo.com, *.ctrp.com, draw.jdfcloud.com, nebula.kuaishou.com
