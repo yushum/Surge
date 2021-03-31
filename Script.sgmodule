@@ -11,7 +11,6 @@ Working Copy = type=http-response,pattern=^https:\/\/education\.github\.com\/api
 淘宝比价 = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 彩云天气 = type=http-response,pattern=^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
 CamScanner = type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
-Picsew = type=http-response,pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/mandxy/ziyong/main/picsew.js
 
 [MITM]
-hostname = %APPEND% education.github.com, api.m.jd.com, trade-acs.m.taobao.com, mobile-api.adguard.com, biz.caiyunapp.com, ap*.intsig.net, buy.itunes.apple.com
+hostname = %APPEND% education.github.com, api.m.jd.com, trade-acs.m.taobao.com, mobile-api.adguard.com, biz.caiyunapp.com, ap*.intsig.net
