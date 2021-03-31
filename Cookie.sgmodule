@@ -13,4 +13,4 @@
 联通_获取cookie = type=http-request,pattern=^https?:\/\/m\.client\.10010\.com\/dailylottery\/static\/(integral|doubleball)\/firstpage,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/script/10010/unicom_signin.min.js
 
 [MITM]
-hostname= ifac*.iqiyi.com, as.xiaojukeji.com, common.diditaxi.com.cn, h5.ele.me, daojia.jd.com, i.meituan.com, zhiyou.smzdm.com, account.huami.com, m.client.10010.com
+hostname=  %APPEND%  ifac*.iqiyi.com, as.xiaojukeji.com, common.diditaxi.com.cn, h5.ele.me, daojia.jd.com, i.meituan.com, zhiyou.smzdm.com, account.huami.com, m.client.10010.com
