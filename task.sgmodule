@@ -1,4 +1,4 @@
-#!name=Yusum's Task Module
+#!name=Yusum's Tasks Module
 #!desc=Yusum收集自用
 [Script]
 爱奇艺会员 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@master/iQIYI-DailyBonus/iQIYI.js
