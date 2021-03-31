@@ -1,0 +1,7 @@
+#!name=Picsew内购
+#!desc=Yusum收集自用
+
+[Script]
+Picsew = type=http-response,pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/mandxy/ziyong/main/picsew.js
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
