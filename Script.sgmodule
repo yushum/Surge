@@ -5,7 +5,6 @@
 ^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ https://raw.githubusercontent.com/langkhach270389/Scripting/master/Adguard.rsp 302
 
 [Script]
-Working Copy = type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$,requires-body=1,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js
 京东比价 = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 淘宝比价 = type=http-request,pattern=^http://.+/amdc/mobileDispatch,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 淘宝比价 = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
@@ -13,4 +12,4 @@ Working Copy = type=http-response,pattern=^https:\/\/education\.github\.com\/api
 CamScanner = type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
 
 [MITM]
-hostname = %APPEND% education.github.com, api.m.jd.com, trade-acs.m.taobao.com, mobile-api.adguard.com, biz.caiyunapp.com, ap*.intsig.net
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, mobile-api.adguard.com, biz.caiyunapp.com, ap*.intsig.net
