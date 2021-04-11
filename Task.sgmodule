@@ -11,3 +11,4 @@
 什么值得买_每日签到 = type=cron,cronexp=5 0 * * *,timeout=120,wake-system=1,script-path=https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/script/smzdm/smzdm_signin.js
 小米运动 = type=cron,cronexp=0 7 * * *,timeout=120,wake-system=1,script-path=https://cdn.jsdelivr.net/gh/yushum/Quantumult-X@master/task/xmSports.js
 联通_签到与抽奖 = type=cron,cronexp=20 0 * * *,timeout=120,wake-system=1,script-path=https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/script/10010/unicom_signin.min.js
+不背单词 = type=cron,cronexp=10 0 0 * * *,timeout=120,wake-system=1,script-path=https://cdn.jsdelivr.net/gh/chavyleung/scripts@master/bubei/bubei.js
